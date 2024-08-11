@@ -5,88 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil personal</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/6337730bdf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header-pri">
-        <ul>
+    <nav class="navbar">
+        <div class="nav-bars" id="bars">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="menu">
             <li>
-                <a href="#about">Sobre mi</a>
+                <a href="#about">Acerca</a>
             </li>
 
             <li>
-                <a href="#educacion">Educacion</a>
+                <a href="#education">Educacion</a>
             </li>
 
             <li>
-                <a href="#proyectos">Proyectos</a>
+                <a href="#projects">Proyectos</a>
             </li>
         </ul>
-    </header>
+    </nav>
 
-    <div class="header">
-        <img src="harvey.jpeg" alt="" class="profile-pic">
-        <h1>Harvey David</h1>
+    <section class="content">
+        <div class="img">
+            <img src="assets/harvey.jpeg" alt="" class="profile-pic">
+            <h1>Harvey David</h1>
+        </div>
 
-        <section>
+        <div class="text">
             <p>Desarrollador Web</p>
-            <img src="web.png" alt="Icono de desarrrollador" style="width: 20px;">
-            </sectio>
-    </div>
+            <img src="assets/web.png" alt="Icono de desarrrollador" style="width: 20px;">
+        </div>
+    </section>
 
-    <div class="container" id="about">
-        <section class="content">
-            <h2>Sobre mi</h2>
-            <p>¡Hola! Soy Harvey David Castellanos, un apasionado del aprendizaje autodidacta y del desarrollo personal. Disfruto
-                sumergirme en nuevos temas y desafiarme a mí mismo a aprender cosas nuevas. Mi interés en el estudio
-                independiente me ha llevado a explorar una variedad de áreas, pero siempre vuelvo a mi amor por el
-                inglés, que considero una herramienta poderosa para abrir puertas y conectar con personas de todo el
-                mundo.</p>
-            <p>Además de mi entusiasmo por el estudio, soy un firme creyente en mantener un equilibrio saludable entre
-                la mente y el cuerpo. Hacer ejercicio es una parte fundamental de mi rutina diaria, ya que me ayuda a
-                mantenerme enfocado y enérgico en todos los aspectos de mi vida.</p>
-            <p>Aquí en mi portafolio, comparto proyectos, logros y momentos destacados que reflejan mi viaje de
-                aprendizaje y crecimiento. ¡Gracias por visitar!</p>
-        </section>
+    <section class="container about" id="about">
+        <h2># Sobre mí</h2>
+        <p>Soy Harvey David Castellanos, un entusiasta del aprendizaje autodidacta y del desarrollo personal. Disfruto
+            explorar nuevos temas, con un amor especial por el inglés, que veo como una herramienta poderosa para
+            conectar con el mundo.</p>
+        <p>Creo en el equilibrio entre mente y cuerpo, y el ejercicio es clave en mi rutina diaria para mantenerme
+            enfocado y enérgico.</p>
+        <p>En mi portafolio, comparto proyectos y logros que reflejan mi viaje de aprendizaje y crecimiento. ¡Gracias
+            por visitar!</p>
+    </section>
 
-        <section class="content" id="educacion">
-            <h2>Educacion</h2>
+    <section class="container education" id="education">
+        <h2># Educacion</h2>
 
-            <ul>
-                <li>
-                    <h4>Educacion Bachiller</h4>
-                    <p>Gimnasio Militar Fac 2010-2016</p>
-                </li>
+        <ul>
+            <li>
+                <h4>Educacion Bachiller</h4>
+                <p>Gimnasio Militar Fac 2010-2016</p>
+            </li>
 
-                <li>
-                    <h4>Servicio Nacional de Aprendizaje (SENA)</h4>
-                    <p>Tencnologo en sistemas 2018-2020</p>
-                </li>
+            <li>
+                <h4>Servicio Nacional de Aprendizaje (SENA)</h4>
+                <p>Tencnologo en sistemas 2018-2020</p>
+            </li>
 
-                <li>
-                    <h4>Universidad Manuela Beltran</h4>
-                    <p>Ingenieria de Software 2021-Actualidad</p>
-                </li>
-            </ul>
+            <li>
+                <h4>Universidad Manuela Beltran</h4>
+                <p>Ingenieria de Software 2021-Actualidad</p>
+            </li>
+        </ul>
 
-        </section>
+    </section>
 
-        <section class="content">
-            <h2>Sobre mi</h2>
-            <p>¡Hola! Soy Harvey David Castellanos, un apasionado del aprendizaje autodidacta y del desarrollo personal. Disfruto
-                sumergirme en nuevos temas y desafiarme a mí mismo a aprender cosas nuevas. Mi interés en el estudio
-                independiente me ha llevado a explorar una variedad de áreas, pero siempre vuelvo a mi amor por el
-                inglés, que considero una herramienta poderosa para abrir puertas y conectar con personas de todo el
-                mundo.</p>
-            <p>Además de mi entusiasmo por el estudio, soy un firme creyente en mantener un equilibrio saludable entre
-                la mente y el cuerpo. Hacer ejercicio es una parte fundamental de mi rutina diaria, ya que me ayuda a
-                mantenerme enfocado y enérgico en todos los aspectos de mi vida.</p>
-            <p>Aquí en mi portafolio, comparto proyectos, logros y momentos destacados que reflejan mi viaje de
-                aprendizaje y crecimiento. ¡Gracias por visitar!</p>
-        </section>
-    </div>
+    <section class="container project" id="projects">
+        <h2># Proyectos</h2>
+
+        <p>A lo largo de mi aprendizaje, he creado una variedad de proyectos utilizando tecnologías como</p>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>TailwindCSS</li>
+        </ul>
+
+        <p>
+            Estos proyectos reflejan mi crecimiento y la aplicación práctica de mis
+            habilidades en desarrollo web. Actualmente, estoy profundizando mis conocimientos en Spring Boot, lo que me
+            permitirá expandir aún más mis capacidades en el desarrollo de aplicaciones robustas y escalables.
+        </p>
+    </section>
 
     <div class="footer">
         <p>© 2024 Harvey david</p>
@@ -116,6 +123,8 @@
 
         </div>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles Menu */
+.navbar {
+    /* padding: 1rem 2rem; */
+    display: flex;
+    justify-content: center;
+    background-color: #e0e0e0;
+    width: 100%;
+    /* height: 88px; */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.nav-links li {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li:hover {
+    text-decoration: underline;
+    background-color: #ffffff;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    text-align: center;
+}
+
+.navbar i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        background-color: #e0e0e0;
+        width: 100%;
+    }
+
+    .nav-bars {
+        padding: 1rem 2rem;
+    }
+
+    .navbar i {
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .disable {
+        display: none;
+    }
+}
+
+/* Styles Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 88px);
+}
+
+.content .img {
+    display: flex;
+    /* background-color: green; */
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    h1 {
+        font-size: 3rem;
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.content .img img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+        0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.content .text {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Style container */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.container h2 {
+    font-size: 2rem;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.container p {
+    font-family: "Comic Neue", cursive;
+}
+
+/* Style about */
+.about {
+    background-color: #e7e7e7;
+}
+
+/* Style education */
+.education {
+    background-color: white;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+/* Style projects */
+.project {
+    background-color: #e7e7e7;
+}
+
+.project li {
+    list-style: circle;
+    margin-left: 1rem;
+}
+
+/* Style footer */
+.footer {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.8rem;
+}
+
+.contact ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact i {
+    color: black;
+    font-size: 1.5rem;
+}

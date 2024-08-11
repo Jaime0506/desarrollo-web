@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    color: #808080;
+    margin: 0;
+    padding: 0;
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-pri {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        gap: 35px;
+        padding: 0;
+
+        a {
+            font-family: "Comic Neue", cursive;
+            font-weight: 300;
+            font-style: normal;
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.content {
+    background-color: #f0f0f0;
+    width: 100%;
+    margin: 150px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+
+    h2 {
+        color: black;
+        font-family: "Lilita One", sans-serif;
+        font-weight: 100;
+        font-size: 35px;
+        font-style: normal;
+    }
+
+    h4 {
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-family: "Comic Neue", cursive;
+        font-weight: 300;
+        font-style: normal;
+        margin: 0;
+        margin-bottom: 30px;
+
+        width: 90%;
+    }
+}
+
+.footer {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+        text-align: center;
+    }
+}
+
+.contact-ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin: 5px;
+
+        i {
+            color: black;
+            font-size: 15px;
+        }
+    }
+}

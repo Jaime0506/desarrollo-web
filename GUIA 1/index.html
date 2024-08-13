@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,82 +10,85 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-bars" id="bars">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal" tabindex="0">
+        <div class="nav-bars" id="bars" role="button" aria-label="Alternar menú">
             <i class="fa-solid fa-bars"></i>
         </div>
 
-        <ul class="nav-links" id="menu">
-            <li>
-                <a href="#about">Acerca</a>
+        <ul class="nav-links" id="menu" role="menubar">
+            <li role="none">
+                <a href="#about-section" role="menuitem" id="about" aria-label="Acerca de Mi Link">Acerca</a>
             </li>
 
-            <li>
-                <a href="#education">Educacion</a>
+            <li role="none">
+                <a href="#education-section" role="menuitem" id="education" aria-label="Educación Link">Educación</a>
             </li>
 
-            <li>
-                <a href="#projects">Proyectos</a>
+            <li role="none">
+                <a href="#projects-section" role="menuitem" id="project" aria-label="Proyectos Link">Proyectos</a>
             </li>
         </ul>
     </nav>
 
-    <section class="content">
+    <section class="content" role="region" aria-labelledby="profile-heading">
         <div class="img">
-            <img src="assets/harvey.jpeg" alt="" class="profile-pic">
-            <h1>Harvey David</h1>
+            <img src="assets/harvey.jpeg" alt="Foto de perfil de Harvey David" class="profile-pic">
+            <h1 id="profile-heading">Harvey David</h1>
         </div>
 
         <div class="text">
             <p>Desarrollador Web</p>
-            <img src="assets/web.png" alt="Icono de desarrrollador" style="width: 20px;">
+            <img src="assets/web.png" alt="Icono de desarrollador web" style="width: 20px;">
         </div>
     </section>
 
-    <section class="container about" id="about">
-        <h2># Sobre mí</h2>
-        <p>Soy Harvey David Castellanos, un entusiasta del aprendizaje autodidacta y del desarrollo personal. Disfruto
+    <section class="container about" id="about-section" role="region" aria-labelledby="about-heading" tabindex="0" aria-label="Acerca de mi seccion">
+        <h2 id="about-heading"># Sobre mí</h2>
+        <p id="about-text" tabindex="0">Soy Harvey David Castellanos, un entusiasta del aprendizaje autodidacta y del desarrollo personal. Disfruto
             explorar nuevos temas, con un amor especial por el inglés, que veo como una herramienta poderosa para
-            conectar con el mundo.</p>
-        <p>Creo en el equilibrio entre mente y cuerpo, y el ejercicio es clave en mi rutina diaria para mantenerme
-            enfocado y enérgico.</p>
-        <p>En mi portafolio, comparto proyectos y logros que reflejan mi viaje de aprendizaje y crecimiento. ¡Gracias
-            por visitar!</p>
+            conectar con el mundo.
+
+
+            Creo en el equilibrio entre mente y cuerpo, y el ejercicio es clave en mi rutina diaria para mantenerme
+            enfocado y enérgico
+
+            En mi portafolio, comparto proyectos y logros que reflejan mi viaje de aprendizaje y crecimiento. ¡Gracias
+            por visitar!
+        </p>
     </section>
 
-    <section class="container education" id="education">
-        <h2># Educacion</h2>
+    <section class="container education" id="education-section" role="region" aria-labelledby="education-heading" tabindex="0" aria-label="Educacion seccion">
+        <h2 id="education-heading"># Educación</h2>
 
-        <ul>
-            <li>
-                <h4>Educacion Bachiller</h4>
+        <ul role="list">
+            <li role="listitem">
+                <h4>Educación Bachiller</h4>
                 <p>Gimnasio Militar Fac 2010-2016</p>
             </li>
 
-            <li>
+            <li role="listitem">
                 <h4>Servicio Nacional de Aprendizaje (SENA)</h4>
-                <p>Tencnologo en sistemas 2018-2020</p>
+                <p>Tecnólogo en sistemas 2018-2020</p>
             </li>
 
-            <li>
-                <h4>Universidad Manuela Beltran</h4>
-                <p>Ingenieria de Software 2021-Actualidad</p>
+            <li role="listitem">
+                <h4>Universidad Manuela Beltrán</h4>
+                <p>Ingeniería de Software 2021-Actualidad</p>
             </li>
         </ul>
-
     </section>
 
-    <section class="container project" id="projects">
-        <h2># Proyectos</h2>
+    <section class="container project" id="projects-section" role="region" aria-labelledby="projects-heading" tabindex="0" aria-label="Proyectos seccion">
+        <h2 id="projects-heading"># Proyectos</h2>
 
         <p>A lo largo de mi aprendizaje, he creado una variedad de proyectos utilizando tecnologías como</p>
 
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>TailwindCSS</li>
+        <ul role="list">
+            <li role="listitem">HTML</li>
+            <li role="listitem">CSS</li>
+            <li role="listitem">JavaScript</li>
+            <li role="listitem">React</li>
+            <li role="listitem">TailwindCSS</li>
         </ul>
 
         <p>
@@ -95,34 +98,33 @@
         </p>
     </section>
 
-    <div class="footer">
-        <p>© 2024 Harvey david</p>
+    <footer class="footer" role="contentinfo">
+        <p>© 2024 Harvey David</p>
         <div class="contact">
-            <ul class="contact-ul">
-                <li>
-                    <a href="https://web.whatsapp.com/" target="_blank">
+            <ul class="contact-ul" role="list" aria-label="Enlaces de contacto">
+                <li role="none">
+                    <a href="https://web.whatsapp.com/" target="_blank" aria-label="WhatsApp">
                         <i class="fa-brands fa-whatsapp fa-2x" aria-hidden="true"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="https://linkedin.com/" target="_blank">
+                <li role="none">
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin fa-2x"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="https://github.com/Jaime0506" target="_blank">
+                <li role="none">
+                    <a href="https://github.com/Jaime0506" target="_blank" aria-label="GitHub">
                         <i class="fa-brands fa-github fa-2x"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="https://x.com/" target="_blank">
+                <li role="none">
+                    <a href="https://x.com/" target="_blank" aria-label="X (Twitter)">
                         <i class="fa-brands fa-x-twitter fa-2x"></i>
                     </a>
                 </li>
             </ul>
-
         </div>
-    </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
